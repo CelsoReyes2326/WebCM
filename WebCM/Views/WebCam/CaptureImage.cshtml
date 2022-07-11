@@ -27,6 +27,16 @@
 </div>
 
 <script>
+
+    navigator.mediaDevices.getUserMedia({
+        video: {
+            facingMode: { exact: "environment" }
+        }
+    })
+        .then(function(stream) {
+            video.src = window.URL.createObjectURL(stream);
+            video.play();
+        });
     // CAMERA SETTINGS.
     Webcam.set(
         {
@@ -34,7 +44,6 @@
             height: 190,
             image_format: 'jpeg',
             jpeg_quality: 100,
-            facingMode: { exact: 'environment' }
         });
     Webcam.attach('#LiveCamera');
 
