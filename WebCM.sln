@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCM", "WebCM\WebCM.csproj", "{AA054E37-88D8-42D5-BAA5-541C477D3A9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA054E37-88D8-42D5-BAA5-541C477D3A9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA054E37-88D8-42D5-BAA5-541C477D3A9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA054E37-88D8-42D5-BAA5-541C477D3A9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA054E37-88D8-42D5-BAA5-541C477D3A9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {297A5140-648A-47DC-9A68-C26AC1EA7016}
+	EndGlobalSection
+EndGlobal
