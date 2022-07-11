@@ -34,10 +34,7 @@
             height: 190,
             image_format: 'jpeg',
             jpeg_quality: 100,
-            var constraints = {
-                video: true,
-                facingMode: "environment"
-            };
+            facingMode: { exact: 'environment' }
         });
     Webcam.attach('#LiveCamera');
 
