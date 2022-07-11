@@ -28,11 +28,8 @@
 
 <script>
     // CAMERA SETTINGS.
-    Webcam.set({
-        width: 220,
-        height: 190,
-        image_format: 'jpeg',
-        jpeg_quality: 100
+   Webcam.set('constraints',{
+        facingMode: "environment"
     });
     Webcam.attach('#LiveCamera');
 
