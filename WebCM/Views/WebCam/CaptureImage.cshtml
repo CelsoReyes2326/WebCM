@@ -35,14 +35,10 @@
             image_format: 'jpeg',
             jpeg_quality: 100,
             var constraints = {
-                video: {
-                    facingMode: "environment"
-                       mandatory: {
-                        maxWidth: _this.parameters.sourceWidth,
-                        maxHeight: _this.parameters.sourceHeight
-                    }
-                };
-            });
+                video: true,
+                facingMode: "environment"
+            };
+        });
     Webcam.attach('#LiveCamera');
 
     // SHOW THE SNAPSHOT.
