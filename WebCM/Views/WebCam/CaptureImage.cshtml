@@ -29,13 +29,20 @@
 <script>
     // CAMERA SETTINGS.
     Webcam.set(
-    {
-        facingMode: "environment",
-        width: 220,
-        height: 190,
-        image_format: 'jpeg',
-        jpeg_quality: 100
-    });
+        {
+            width: 220,
+            height: 190,
+            image_format: 'jpeg',
+            jpeg_quality: 100,
+            var constraints = {
+                video: {
+                    facingMode: "environment"
+                       mandatory: {
+                        maxWidth: _this.parameters.sourceWidth,
+                        maxHeight: _this.parameters.sourceHeight
+                    }
+                };
+            });
     Webcam.attach('#LiveCamera');
 
     // SHOW THE SNAPSHOT.
