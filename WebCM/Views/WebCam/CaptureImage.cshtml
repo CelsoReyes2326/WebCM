@@ -28,6 +28,7 @@
 
 <script>
 
+    // CAMERA SETTINGS.
     Webcam.set({
         width: 320,
         height: 180,
@@ -46,7 +47,7 @@
     takeSnapShot = function() {
         Webcam.snap(function(data_uri) {
             document.getElementById('snapShot').innerHTML =
-                '<img src="' + data_uri + '" width="70px" height="50px" />';
+                '<img src="' + data_uri + '" width="320px" height="180px" />';
         });
     }
 
